@@ -17,7 +17,7 @@ inherit pkgconfig autotools gettext
 
 BBCLASSEXTEND += "nativesdk"
 
-EXTRA_OECONF = "--enable-ftdi --enable-cmsis-dap --enable-jlink --enable-stlink --disable-doxygen-html "
+EXTRA_OECONF = "--enable-ftdi --enable-cmsis-dap --enable-jlink --enable-stlink --disable-doxygen-html --enable-sysfsgpio --enable-bcm2835gpio"
 
 do_configure() {
     cd ${S}
